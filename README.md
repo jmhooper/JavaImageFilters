@@ -17,9 +17,6 @@ The output file must be a PNG.
 
 ## Filters
 
-Right now there are only 2 filters.
-Hopefully more will follow.
-
 ### Rainbow
 
 This filter adjusts the the hue of pixels in the image based on where the pixel is horizontally.
@@ -41,3 +38,35 @@ The command line argument for this filter is `--artifacter`.
 | Before | After |
 |--------|-------|
 | ![Before](https://github.com/jmhooper/JavaImageFilters/blob/master/img/artifacter/before.png) | ![After](https://github.com/jmhooper/JavaImageFilters/blob/master/img/artifacter/after.png) |
+
+### RGB Shifter
+
+This filter shifts the red, green, and blue values for the image by a random amount.
+
+The command line argument for this filter is `--rgb-shifter`.
+
+| Before | After |
+|--------|-------|
+| ![Before](https://github.com/jmhooper/JavaImageFilters/blob/master/img/rgb-shifter/before.png) | ![After](https://github.com/jmhooper/JavaImageFilters/blob/master/img/rgb-shifter/after.png) |
+
+### Repeater
+
+This filter repeats the image along the X and Y axis.
+To specify the number of repetitions, set the `X_REPEAT` and `Y_REPEAT` constants in Repeater.java
+
+The command line argument for this filter is `--repeater`.
+
+| Before | After |
+|--------|-------|
+| ![Before](https://github.com/jmhooper/JavaImageFilters/blob/master/img/repeater/before.png) | ![After](https://github.com/jmhooper/JavaImageFilters/blob/master/img/repeater/after.png) |
+
+### RGB Shift Repeater
+
+This filter combines the Repeater and RGB Shifter.
+As it repeats the image, it applies the RGB Shifter filter to it.
+
+The command line argument for this filter is `--rgb-shift-repeater`.
+
+| Before | After |
+|--------|-------|
+| ![Before](https://github.com/jmhooper/JavaImageFilters/blob/master/img/rgb-shift-repeater/before.png) | ![After](https://github.com/jmhooper/JavaImageFilters/blob/master/img/rgb-shift-repeater/after.png) |
